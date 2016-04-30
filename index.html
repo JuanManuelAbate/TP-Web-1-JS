@@ -3,11 +3,34 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <script type="js/script.js">
+    <script src="js/script.js">
     </script>
     <title>Juego Ruleta</title>
   </head>
   <body>
-
+    <h1>Juego de la ruleta</h1>
+    <div class="">
+      Cantidad de creditos:<span id="cantCreditos">100</span>
+    </div>
+    <p>Haga click sobre los valores para seleccionar a que numero desea apostar.</p>
+    <ul>
+      <li onclick="asignarNumSeleccionado(0);">0(cero)</li>
+      <li onclick="asignarNumSeleccionado(1);">1(uno)</li>
+      <li onclick="asignarNumSeleccionado(2);">2(dos)</li>
+      <li onclick="asignarNumSeleccionado(3);">3(tres)</li>
+      <li onclick="asignarNumSeleccionado(4);">4(cuatro)</li>
+      <li onclick="asignarNumSeleccionado(5);">5(cinco)</li>
+      <li onclick="asignarNumSeleccionado(6);">6(seis)</li>
+      <li onclick="asignarNumSeleccionado(7);">7(siete)</li>
+      <li onclick="asignarNumSeleccionado(8);">8(ocho)</li>
+      <li onclick="asignarNumSeleccionado(9);">9(nueve)</li>
+    </ul>
+    <div class="">
+      Numero elegido:<span id="numElegido"></span>
+    </div>
+    <div class="">
+      Numero ganador:<span id="numGanador"></span>
+    </div>
+    <button type="button" name="button" onclick="jugar();">Jugar!</button>
   </body>
 </html>
